@@ -1,0 +1,114 @@
+<Collection>
+	<DOC>
+		<DOCNO>1</DOCNO>
+		<Title>Information retrieval (IR)</Title>
+		<Text>
+			Information retrieval (IR) is the activity of obtaining information system resources relevant to an information need from a collection. Searches can be based on full-text or other content-based indexing. Information retrieval is the science of searching for information in a document, searching for documents themselves, and also searching for metadata that describe data, and for databases of texts, images or sounds. Automated information retrieval systems are used to reduce what has been called information overload. An IR system is a software that provide access to books, journals and other documents, stores them and manages the document. Web search engines are the most visible IR applications.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>2</DOCNO>
+		<Title>The first decision</Title>
+		<Text>
+			The first decision that affects an information retrieval systems performance in terms of precision and recall is what data will be ingested and indexed. The more focused on likely items of potential interest the ingest can be, the higher the performance. Information retrieval Systems that focus what they retrieve to a specific area are called “vertical” index systems. Decisions on constraining what is collected and filtering out items that have a low chance of being of value before you start the processing of the item can make improvements in the overall system performance from a user’s perspective.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>3</DOCNO>
+		<Title>Data mining is the process of finding anomalies</Title>
+		<Text>
+			Data mining is the process of finding anomalies, patterns and correlations within large data sets to predict outcomes. Using a broad range of techniques, you can use this information to increase revenues, cut costs, improve customer relationships, reduce risks and more.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>4</DOCNO>
+		<Title>Data mining is the process of sorting</Title>
+		<Text>
+			Data mining is the process of sorting through large data sets to identify patterns and establish relationships to solve problems through data analysis. Data mining tools allow enterprises to predict future trends. In general, the benefits of data mining come from the ability to uncover hidden patterns and relationships in data that can be used to make predictions that impact businesses. Specific data mining benefits vary depending on the goal and the industry. Sales and marketing departments can mine customer data to improve lead conversion rates or to create one-to-one marketing campaigns. Data mining information on historical sales patterns and customer behaviors can be used to build prediction models for future sales, new products and services. Companies in the financial industry use data mining tools to build risk models and detect fraud. The manufacturing industry uses data mining tools to improve product safety, identify quality issues, manage the supply chain and improve operations.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>5</DOCNO>
+		<Title>Data mining is the process of discovering</Title>
+		<Text>
+			Data mining is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems. Data mining is an interdisciplinary subfield of computer science and statistics with an overall goal to extract information (with intelligent methods) from a data set and transform the information into a comprehensible structure for further use. Data mining is the analysis step of the "knowledge discovery in databases" process, or KDD. Aside from the raw analysis step, it also involves database and data management aspects, data pre-processing, model and inference considerations, interestingness metrics, complexity considerations, post-processing of discovered structures, visualization, and online updating. The difference between data analysis and data mining is that data analysis is to summarize the history such as analyzing the effectiveness of a marketing campaign, in contrast, data mining focuses on using specific machine learning and statistical models to predict the future and discover the patterns among data. The term "data mining" is in fact a misnomer, because the goal is the extraction of patterns and knowledge from large amounts of data, not the extraction (mining) of data itself. It also is a buzzword and is frequently applied to any form of large-scale data or information processing (collection, extraction, warehousing, analysis, and statistics) as well as any application of computer decision support system, including artificial intelligence (e.g., machine learning) and business intelligence. The book Data mining: Practical machine learning tools and techniques with Java (which covers mostly machine learning material) was originally to be named just Practical machine learning, and the term data mining was only added for marketing reasons. Often the more general terms (large scale) data analysis and analytics – or, when referring to actual methods, artificial intelligence and machine learning – are more appropriate. The actual data mining task is the semi-automatic or automatic analysis of large quantities of data to extract previously unknown, interesting patterns such as groups of data records (cluster analysis), unusual records (anomaly detection), and dependencies (association rule mining, sequential pattern mining). This usually involves using database techniques such as spatial indices. These patterns can then be seen as a kind of summary of the input data, and may be used in further analysis or, for example, in machine learning and predictive analytics. For example, the data mining step might identify multiple groups in the data, which can then be used to obtain more accurate prediction results by a decision support system. Neither the data collection, data preparation, nor result interpretation and reporting is part of the data mining step, but do belong to the overall KDD process as additional steps. The related terms data dredging, data fishing, and data snooping refer to the use of data mining methods to sample parts of a larger population data set that are (or may be) too small for reliable statistical inferences to be made about the validity of any patterns discovered. These methods can, however, be used in creating new hypotheses to test against the larger data populations.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>6</DOCNO>
+		<Title>Natural Language Processing</Title>
+		<Text>
+			Natural Language Processing, usually shortened as NLP, is a branch of artificial intelligence that deals with the interaction between computers and humans using the natural language. The ultimate objective of NLP is to read, decipher, understand, and make sense of the human languages in a manner that is valuable. Most NLP techniques rely on machine learning to derive meaning from human languages.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>7</DOCNO>
+		<Title>Natural language processing (NLP)</Title>
+		<Text>
+			Natural language processing (NLP) is a subfield of computer science, information engineering, and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data. Challenges in natural language processing frequently involve speech recognition, natural language understanding, and natural language generation.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>8</DOCNO>
+		<Title>Artificial Intelligence</Title>
+		<Text>
+			Natural Language Processing (NLP) is a sub-field of Artificial Intelligence that is focused on enabling computers to understand and process human languages, to get computers closer to a human-level understanding of language. Computers don’t yet have the same intuitive understanding of natural language that humans do. They can’t really understand what the language is really trying to say. In a nutshell, a computer can’t read between the lines.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>9</DOCNO>
+		<Title>Branch of artificial intelligence</Title>
+		<Text>
+			Natural language processing (NLP) is a branch of artificial intelligence that helps computers understand, interpret and manipulate human language. NLP draws from many disciplines, including computer science and computational linguistics, in its pursuit to fill the gap between human communication and computer understanding.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>10</DOCNO>
+		<Title>Computer science</Title>
+		<Text>
+			Artificial intelligence is a branch of computer science that aims to create intelligent machines. It has become an essential part of the technology industry. Research associated with artificial intelligence is highly technical and specialized. The core problems of artificial intelligence include programming computers for certain traits such as: knowledge, reasoning, problem solving, perception, learning, planning, ability to manipulate and move objects.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>11</DOCNO>
+		<Title>In order to be effective</Title>
+		<Text>
+			In order to be effective for their users, information retrieval (IR) systems should be adapted to the specific needs of particular environments. The huge and growing array of types of information retrieval systems in use today is on display in Understanding Information Retrieval Systems: Management, Types, and Standards, which addresses over 20 types of IR systems. These various system types, in turn, present both technical and management challenges, which are also addressed in this volume. In order to be interoperable in a networked environment, IR systems must be able to use various types of technical standards, a number of which are described in this bookoften by their original developers.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>12</DOCNO>
+		<Title>Information retrieval (IR) is the science</Title>
+		<Text>
+			Information retrieval (IR) is the science and practice of identification and efficient use of recorded media. Although medical informatics has traditionally concentrated on the retrieval of text from the biomedical literature, the domain over which IR can be applied effectively has broadened considerably with the advent of multimedia publishing and vast storehouses of chemical structures, cartographic materials, gene and protein sequences, video clippings, and a wide range of other digital media of relevance to biomedical education, research, and patient care. As the ease with which information can be recorded and stored in digital form grows, the growth of biomedical knowledge, once spoken of primarily with reference to the biomedical literature, is now equally relevant to the retrieval of information from text within computer-based patient records, documents concerning the administration of medical care, supporting data for biomedical publications, and the literally tens of thousands of electronic-mail messages now sent and stored every day within personal and professional settings.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>13</DOCNO>
+		<Title>Text search techniques</Title>
+		<Text>
+			Text search techniques using text scanning have played an important role in the initial development of Information Retrieval Systems. In the 1970s and 1980s they were essential tools for compensating for the insufficient computer power and for handling some of the more difficult search capabilities such as imbedded character strings and fuzzy searches. They currently play an important role in word processor systems (e.g., the Find function) and in Information Retrieval Systems for locating offensive terms (e.g., imbedded character strings) in the dictionary. The need for specialized hardware text search units to directly search the data on secondary storage has diminished with the growth of processing power of computers.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>14</DOCNO>
+		<Title>Information system</Title>
+		<Text> 
+			Information system is an integrated set of components for collecting, storing, and processing data and for providing information, knowledge, and digital products. Business firms and other organizations rely on information systems to carry out and manage their operations, interact with their customers and suppliers, and compete in the marketplace. Information systems are used to run interorganizational supply chains and electronic markets. For instance, corporations use information systems to process financial accounts, to manage their human resources, and to reach their potential customers with online promotions. Many major companies are built entirely around information systems. These include eBay, a largely auction marketplace; Amazon, an expanding electronic mall and provider of cloud computing services; Alibaba, a business-to-business e-marketplace; and Google, a search engine company that derives most of its revenue from keyword advertising on Internet searches. Governments deploy information systems to provide services cost-effectively to citizens. Digital goods—such as electronic books, video products, and software—and online services, such as gaming and social networking, are delivered with information systems. Individuals rely on information systems, generally Internet-based, for conducting much of their personal lives: for socializing, study, shopping, banking, and entertainment.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>15</DOCNO>
+		<Title>Many organizations</Title>
+		<Text>
+			Many organizations work with large amounts of data. Data are basic values or facts and are organized in a database. Many people think of data as synonymous with information; however, information actually consists of data that has been organized to help answers questions and to solve problems. An information system is defined as the software that helps organize and analyze data. So, the purpose of an information system is to turn raw data into useful information that can be used for decision making in an organization.
+		</Text>
+	</DOC>
+	<DOC>
+		<DOCNO>16</DOCNO>
+		<Title>Adaptation of the first of J.K. Rowling's</Title>
+		<Text>
+			Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.
+		</Text>
+	</DOC>
+</Collection>
