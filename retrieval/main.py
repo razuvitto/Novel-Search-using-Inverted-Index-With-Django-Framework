@@ -393,7 +393,7 @@ def main(input_text):
     if val == 100:
         top_result = top_res[:0]
     else:
-        top_result = top_res[:6]
+        top_result = top_res
     
     # print('Result :')
     top_result
