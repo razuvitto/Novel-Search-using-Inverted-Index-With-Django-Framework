@@ -217,12 +217,12 @@ def main(input_text):
                 sums += 1
         df.append(sums)
 
-    bobot_res = df[0]
-    if bobot_res > 0:
-        for i in range(len(df)):
+    for i in range(len(df)):
+        bobot_res = df[i]
+        if bobot_res > 0:
             res.append(math.log10(N / df[i]))
-    else:
-        res.append(100)
+        else:
+            res.append(100)
         
     # Weight
     weight = []
