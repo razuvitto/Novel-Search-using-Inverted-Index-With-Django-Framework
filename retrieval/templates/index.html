@@ -1,15 +1,20 @@
+<!-- Coded with <3 Razuvitto
+location : retrieval/templates/index.html
+April 2018 -->
+
 {% load staticfiles %}
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="ThemeStarz">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" href="static/assets/img/icon.png" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    
+
 
     <!-- <link rel="stylesheet" href="{% static 'assets/css/style.css' %}"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
@@ -27,142 +32,161 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <meta property="og:url"           content="http://demo.icanbecreative.com/css3-animated-search-box/" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="CSS3 Animated Search Box" />
-    <meta property="og:description"   content="Your description" />
-    <meta property="og:image"         content="http://demo.icanbecreative.com/css3-animated-search-box/featured.jpg" />
+    <meta property="og:url" content="http://demo.icanbecreative.com/css3-animated-search-box/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CSS3 Animated Search Box" />
+    <meta property="og:description" content="Your description" />
+    <meta property="og:image" content="http://demo.icanbecreative.com/css3-animated-search-box/featured.jpg" />
 
-    
 
-	<title>Information Retrieval</title>
+
+    <title>Information Retrieval</title>
 
 
     <style type="text/css">
-        html,body {height: 100%;}
-        body {padding: 0px; margin:0px; background:url(static/assets/img/image.jpg) ; background-position: center; background-size: cover; background-attachment: fixed; background-repeat: no-repeat;}
-
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: url(static/assets/img/image.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
         .logo_depan {
             position: absolute;
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-            top:45%;
-            left:50%;
+            top: 45%;
+            left: 50%;
         }
-
+        
         .search-wrapper {
             position: absolute;
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-            top:60%;
-            left:50%;
+            top: 60%;
+            left: 50%;
         }
+        
         .search-wrapper.active {}
-
+        
         .search-wrapper .input-holder {
             overflow: hidden;
             height: 70px;
-            background: rgba(255,255,255,0);
-            border-radius:6px;
+            background: rgba(255, 255, 255, 0);
+            border-radius: 6px;
             position: relative;
-            width:70px;
+            width: 70px;
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
         }
+        
         .search-wrapper.active .input-holder {
             border-radius: 50px;
-            width:450px;
+            width: 450px;
             background: rgba(255, 255, 255, 0.2);
             -webkit-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
             -moz-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
             transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
         }
-
+        
         .search-wrapper .input-holder .search-input {
-            width:100%;
+            width: 100%;
             height: 50px;
-            padding:0px 70px 0 20px;
+            padding: 0px 70px 0 20px;
             opacity: 0;
             position: absolute;
-            top:0px;
-            left:0px;
+            top: 0px;
+            left: 0px;
             background: transparent;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
-            border:none;
-            outline:none;
-            font-family:"Open Sans", Arial, Verdana;
+            border: none;
+            outline: none;
+            font-family: "Open Sans", Arial, Verdana;
             font-size: 16px;
             font-weight: 400;
             line-height: 20px;
-            color:#FFF;
+            color: #FFF;
             -webkit-transform: translate(0, 60px);
             -moz-transform: translate(0, 60px);
             transform: translate(0, 60px);
             -webkit-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
             -moz-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
             transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
-
             -webkit-transition-delay: 0.3s;
             -moz-transition-delay: 0.3s;
             transition-delay: 0.3s;
         }
+        
         .search-wrapper.active .input-holder .search-input {
             opacity: 1;
             -webkit-transform: translate(0, 10px);
             -moz-transform: translate(0, 10px);
             transform: translate(0, 10px);
         }
-
+        
         .search-wrapper .input-holder .search-icon {
-            width:70px;
-            height:70px;
-            border:none;
-            border-radius:35px;
+            width: 70px;
+            height: 70px;
+            border: none;
+            border-radius: 35px;
             background: #cecccc;
-            padding:0px;
-            outline:none;
+            padding: 0px;
+            outline: none;
             position: relative;
             z-index: 2;
-            float:right;
+            float: right;
             cursor: pointer;
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
         }
+        
         .search-wrapper.active .input-holder .search-icon {
             width: 50px;
-            height:50px;
+            height: 50px;
             margin: 10px;
             border-radius: 30px;
         }
+        
         .search-wrapper .input-holder .search-icon span {
-            width:22px;
-            height:22px;
+            width: 22px;
+            height: 22px;
             display: inline-block;
             vertical-align: middle;
-            position:relative;
+            position: relative;
             -webkit-transform: rotate(45deg);
             -moz-transform: rotate(45deg);
             transform: rotate(45deg);
             -webkit-transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
             -moz-transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
             transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
-
         }
+        
         .search-wrapper.active .input-holder .search-icon span {
             -webkit-transform: rotate(-45deg);
             -moz-transform: rotate(-45deg);
             transform: rotate(-45deg);
         }
-        .search-wrapper .input-holder .search-icon span::before, .search-wrapper .input-holder .search-icon span::after {
+        
+        .search-wrapper .input-holder .search-icon span::before,
+        .search-wrapper .input-holder .search-icon span::after {
             position: absolute;
-            content:'';
+            content: '';
         }
+        
         .search-wrapper .input-holder .search-icon span::before {
             width: 4px;
             height: 11px;
@@ -171,6 +195,7 @@
             border-radius: 2px;
             background: rgb(67, 66, 68);
         }
+        
         .search-wrapper .input-holder .search-icon span::after {
             width: 20px;
             height: 20px;
@@ -179,14 +204,14 @@
             border-radius: 16px;
             border: 4px solid rgb(67, 66, 68);
         }
-
+        
         .search-wrapper .close {
             position: absolute;
             z-index: 1;
-            top:24px;
-            right:20px;
-            width:25px;
-            height:25px;
+            top: 24px;
+            right: 20px;
+            width: 25px;
+            height: 25px;
             cursor: pointer;
             -webkit-transform: rotate(-180deg);
             -moz-transform: rotate(-180deg);
@@ -198,14 +223,14 @@
             -moz-transition-delay: 0.2s;
             transition-delay: 0.2s;
         }
-
+        
         .search-wrapper .voice {
             position: absolute;
             z-index: 1;
-            top:24px;
-            right:20px;
-            width:25px;
-            height:25px;
+            top: 24px;
+            right: 20px;
+            width: 25px;
+            height: 25px;
             cursor: pointer;
             -webkit-transform: rotate(-180deg);
             -moz-transform: rotate(-180deg);
@@ -217,10 +242,9 @@
             -moz-transition-delay: 0.2s;
             transition-delay: 0.2s;
         }
-
-
+        
         .search-wrapper.active .close {
-            right:-100px;
+            right: -100px;
             -webkit-transform: rotate(45deg);
             -moz-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -231,9 +255,9 @@
             -moz-transition-delay: 0.5s;
             transition-delay: 0.5s;
         }
-
-          .search-wrapper.active .voice {
-            right:520px;
+        
+        .search-wrapper.active .voice {
+            right: 520px;
             -webkit-transform: rotate(45deg);
             -moz-transform: rotate(45deg);
             transform: rotate(90deg);
@@ -244,26 +268,30 @@
             -moz-transition-delay: 0.5s;
             transition-delay: 0.5s;
         }
-        .search-wrapper .close::before, .search-wrapper .close::after {
-            position:absolute;
-            content:'';
+        
+        .search-wrapper .close::before,
+        .search-wrapper .close::after {
+            position: absolute;
+            content: '';
             background: #FFF;
             border-radius: 2px;
         }
-
-        .search-wrapper .voice::before, .search-wrapper .voice::after {
-            position:absolute;
-            content:'';
+        
+        .search-wrapper .voice::before,
+        .search-wrapper .voice::after {
+            position: absolute;
+            content: '';
             background: rgb(209, 21, 21);
             border-radius: 2px;
         }
-
+        
         .search-wrapper .close::before {
             width: 5px;
             height: 25px;
             left: 10px;
             top: 0px;
         }
+        
         .search-wrapper .voice::before {
             width: 25px;
             height: 25px;
@@ -272,6 +300,7 @@
             top: 0px;
             border-radius: 15px;
         }
+        
         .search-wrapper .close::after {
             width: 25px;
             height: 5px;
@@ -282,30 +311,58 @@
         .search-wrapper .result-container {
             width: 100%;
             position: absolute;
-            top:80px;
-            left:0px;
+            top: 80px;
+            left: 0px;
             text-align: center;
             font-family: "Open Sans", Arial, Verdana;
             font-size: 14px;
-            display:none;
-            color:#B7B7B7;
+            display: none;
+            color: #B7B7B7;
         }
-
-
+        
         @media screen and (max-width: 560px) {
-            .search-wrapper.active .input-holder {width:200px;}
+            .search-wrapper.active .input-holder {
+                width: 200px;
+            }
         }
-
-
-        body {background:#e2e2e2;}
+        
+        body {
+            background: #e2e2e2;
+        }
         /********card frame **************/
-        .card {position: relative;width: 1349px; border-radius: 3px; background-color: #fff;color: #4f5256;border: 1px solid #f2f2f2;margin-bottom: -40px;background:#fff;}
-        .card-header{ padding: 16px;margin:0px;}
-        .card-body {position: relative; padding: 16px;}
-
-        .gaadiex-list {list-style-type: none; margin: 0;padding: 0;}
-        .gaadiex-list>.gaadiex-list-item {padding: 0 22px;}
-        .gaadiex-list-item-img  {
+        
+        .card {
+            position: relative;
+            width: 1349px;
+            border-radius: 3px;
+            background-color: #fff;
+            color: #4f5256;
+            border: 1px solid #f2f2f2;
+            margin-bottom: -40px;
+            background: #fff;
+        }
+        
+        .card-header {
+            padding: 16px;
+            margin: 0px;
+        }
+        
+        .card-body {
+            position: relative;
+            padding: 16px;
+        }
+        
+        .gaadiex-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .gaadiex-list>.gaadiex-list-item {
+            padding: 0 22px;
+        }
+        
+        .gaadiex-list-item-img {
             float: left;
             width: 58px;
             height: 58px;
@@ -314,9 +371,10 @@
             margin-right: 20px;
             border-radius: 50%;
         }
-        .gaadiex-list-item i  {
+        
+        .gaadiex-list-item i {
             float: left;
-            font-size:48px;
+            font-size: 48px;
             width: 58px;
             height: 58px;
             margin-top: 20px;
@@ -324,37 +382,39 @@
             margin-right: 20px;
             border-radius: 50%;
         }
-        .border-b-1 {border-bottom: 1px solid rgba(162,162,162,.16);}
-
+        
+        .border-b-1 {
+            border-bottom: 1px solid rgba(162, 162, 162, .16);
+        }
     </style>
 
 
     <!-- SCRIPT -->
     <script type="text/javascript">
-        function searchToggle(obj, evt){
+        function searchToggle(obj, evt) {
             var container = $(obj).closest('.search-wrapper');
 
-            if(!container.hasClass('active')){
-                  container.addClass('active');
-                  evt.preventDefault();
-            }
-            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
-                  container.removeClass('active');
-                  // clear input
-                  container.find('.search-input').val('');
-                  // clear and hide result container when we press close
-                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            if (!container.hasClass('active')) {
+                container.addClass('active');
+                evt.preventDefault();
+            } else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
+                container.removeClass('active');
+                // clear input
+                container.find('.search-input').val('');
+                // clear and hide result container when we press close
+                container.find('.result-container').fadeOut(100, function() {
+                    $(this).empty();
+                });
             }
         }
 
-        function submitFn(obj, evt){
+        function submitFn(obj, evt) {
             value = $(obj).find('.search-input').val().trim();
 
             _html = "Yup yup! Your search text sounds like this: ";
-            if(!value.length){
+            if (!value.length) {
                 _html = "Yup yup! Add some text friend :D";
-            }
-            else{
+            } else {
                 _html += "<b>" + value + "</b>";
             }
 
@@ -363,88 +423,89 @@
 
             evt.preventDefault();
         }
-        </script>
+    </script>
 </head>
+
 <body class="has-loading-screen">
-<div class="ts-page-wrapper">
-    <!--Content
+    <div class="ts-page-wrapper">
+        <!--Content
     ====================================================================================================================
     -->
-    <div>
-        <!--HERO HEADER
+        <div>
+            <!--HERO HEADER
         ================================================================================================================
         ================================================================================================================
         -->
-        <header id="ts-hero" class="ts-height--100vh ts-has-overlay text-white">
-            <form action="" method="post">
-                {% csrf_token %}
-                <div class="logo_depan">
-                    <img src="static/assets/img/Jaabre-book.png" alt="" width="=260" height="120">
-                </div>
-            </form>     
-            <form id="labnol" action="" method="post">
-                {% csrf_token %}
-                <div class="search-wrapper">
-                    <div class="input-holder">
-                        <input type="text" class="search-input" name="input_text" id="transcript" placeholder="Type to search" required/>
-                        <button type="submit" class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+            <header id="ts-hero" class="ts-height--100vh ts-has-overlay text-white">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="logo_depan">
+                        <img src="static/assets/img/Jaabre-book.png" alt="" width="=260" height="120">
                     </div>
-                    <span class="close" onclick="searchToggle(this, event);"></span>
-                    <span class="voice" onclick="startDictation();"></span>
-                    <!-- <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" /> -->
+                </form>
+                <form id="labnol" action="" method="post">
+                    {% csrf_token %}
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" name="input_text" id="transcript" placeholder="Type to search" required/>
+                            <button type="submit" class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                        </div>
+                        <span class="close" onclick="searchToggle(this, event);"></span>
+                        <span class="voice" onclick="startDictation();"></span>
+                        <!-- <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" /> -->
+                    </div>
+                </form>
+                <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+                    <div id="ts-particles" class="ts-background-image ts-parallax-element ts-z-index__1">
+                    </div>
+                    <div class="ts-img-into-bg ts-background-image ts-parallax-element">
+                        <img src="static/assets/img/librarys.jpg" alt="">
+                    </div>
                 </div>
-            </form>
-            <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
-                <div id="ts-particles" class="ts-background-image ts-parallax-element ts-z-index__1">
-                </div>
-                <div class="ts-img-into-bg ts-background-image ts-parallax-element">
-                    <img src="static/assets/img/librarys.jpg" alt="">
-                </div>
-            </div>
-        </header>
+            </header>
+        </div>
+        <!--end page-->
     </div>
-    <!--end page-->
-</div>
 
-<script>
-    function startDictation() {
-  
-      if (window.hasOwnProperty('webkitSpeechRecognition')) {
-  
-        var recognition = new webkitSpeechRecognition();
-  
-        recognition.continuous = false;
-        recognition.interimResults = false;
-  
-        recognition.lang = "en-US";
-        recognition.start();
-  
-        recognition.onresult = function(e) {
-          document.getElementById('transcript').value
-                                   = e.results[0][0].transcript;
-          recognition.stop();
-          document.getElementById('labnol').submit();
-        };
-  
-        recognition.onerror = function(e) {
-          recognition.stop();
+    <script>
+        function startDictation() {
+
+            if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+                var recognition = new webkitSpeechRecognition();
+
+                recognition.continuous = false;
+                recognition.interimResults = false;
+
+                recognition.lang = "en-US";
+                recognition.start();
+
+                recognition.onresult = function(e) {
+                    document.getElementById('transcript').value = e.results[0][0].transcript;
+                    recognition.stop();
+                    document.getElementById('labnol').submit();
+                };
+
+                recognition.onerror = function(e) {
+                    recognition.stop();
+                }
+
+            }
         }
-  
-      }
-    }
-  </script>
-	<script src="static/assets/js/jquery-3.3.1.min.js"></script>
-	<script src="static/assets/js/popper.min.js"></script>
-	<script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    </script>
+    <script src="static/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="static/assets/js/popper.min.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="static/assets/js/imagesloaded.pkgd.min.js"></script>
-	<script src="static/assets/js/isInViewport.jquery.js"></script>
-	<script src="static/assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="static/assets/js/scrolla.jquery.min.js"></script>
-	<script src="static/assets/js/jquery.validate.min.js"></script>
-	<script src="static/assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
-	<script src="static/assets/js/odometer.min.js"></script>
-	<script src="static/assets/js/owl.carousel.min.js"></script>
+    <script src="static/assets/js/isInViewport.jquery.js"></script>
+    <script src="static/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/assets/js/scrolla.jquery.min.js"></script>
+    <script src="static/assets/js/jquery.validate.min.js"></script>
+    <script src="static/assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
+    <script src="static/assets/js/odometer.min.js"></script>
+    <script src="static/assets/js/owl.carousel.min.js"></script>
     <script src="static/assets/js/particles.min.js"></script>
     <script src="static/assets/js/custom.js"></script>
 </body>
+
 </html>

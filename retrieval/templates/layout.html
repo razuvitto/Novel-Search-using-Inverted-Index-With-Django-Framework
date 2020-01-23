@@ -1,14 +1,19 @@
+<!-- Coded with <3 Razuvitto
+location : retrieval/templates/layout.html
+April 2018 -->
+
 {% load static %}
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="ThemeStarz">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" href={%static "assets/img/icon.png" %}/>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
     <link rel="stylesheet" href={%static "assets/bootstrap/css/bootstrap.min.css" %} type="text/css">
     <link rel="stylesheet" href={%static "assets/font-awesome/css/fontawesome-all.min.css" %}>
@@ -17,7 +22,7 @@
 
 
     <link rel="stylesheet" href={%static "assets/scss/main.scss" %}>
-	<link rel="stylesheet" href={%static "assets/assets-novel/css/layout.css" %}>
+    <link rel="stylesheet" href={%static "assets/assets-novel/css/layout.css" %}>
     <link rel="stylesheet" href={%static "assets/assets-novel/css/media-queries.css" %}>
     <link rel="stylesheet" href={%static "assets/assets-novel/css/magnific-popup.css" %}>
 
@@ -33,15 +38,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <meta property="og:url"           content="http://demo.icanbecreative.com/css3-animated-search-box/" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="CSS3 Animated Search Box" />
-    <meta property="og:description"   content="Your description" />
-    <meta property="og:image"         content="http://demo.icanbecreative.com/css3-animated-search-box/featured.jpg" />
+    <meta property="og:url" content="http://demo.icanbecreative.com/css3-animated-search-box/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CSS3 Animated Search Box" />
+    <meta property="og:description" content="Your description" />
+    <meta property="og:image" content="http://demo.icanbecreative.com/css3-animated-search-box/featured.jpg" />
 
-    
 
-	<title>Information Retrieval</title>
+
+    <title>Information Retrieval</title>
 
 
     <style type="text/css">
@@ -50,47 +55,87 @@
             width: 700px;
             overflow: hidden;
             text-overflow: ellipsis;
-        }   
-
+        }
+        
         p {
             white-space: nowrap;
             width: 700px;
             overflow: hidden;
             text-overflow: ellipsis;
-        }   
-
-        html,body {height: 100%;}
-        body {padding: 0px; margin:0px; background:url(static/assets/img/image.jpg) ; background-position: center; background-size: cover; background-attachment: fixed; background-repeat: no-repeat;}
-
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: url(static/assets/img/image.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
         .result-display {
             margin-left: 170px;
         }
-
-
+        
         .logo_depan {
             position: absolute;
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-            top:45%;
-            left:50%;
+            top: 45%;
+            left: 50%;
         }
-
-     
+        
         @media screen and (max-width: 560px) {
-            .search-wrapper.active .input-holder {width:200px;}
+            .search-wrapper.active .input-holder {
+                width: 200px;
+            }
         }
-
-
-        body {background:#e2e2e2;}
+        
+        body {
+            background: #e2e2e2;
+        }
         /********card frame **************/
-        .card {position: relative;width: 1365px; height: 680px;border-radius: 3px; background-color: #fff;color: #4f5256;border: 1px solid #f2f2f2;margin-bottom: -40px;background:#fff;}
-        .card-header{ padding: 5px;margin:0px;}
-        .card-body {position: relative; padding: 16px;}
-
-        .gaadiex-list {list-style-type: none; margin: 0;padding: 0;}
-        .gaadiex-list>.gaadiex-list-item {padding: 0 22px;}
-        .gaadiex-list-item-img  {
+        
+        .card {
+            position: relative;
+            width: 1365px;
+            height: 680px;
+            border-radius: 3px;
+            background-color: #fff;
+            color: #4f5256;
+            border: 1px solid #f2f2f2;
+            margin-bottom: -40px;
+            background: #fff;
+        }
+        
+        .card-header {
+            padding: 5px;
+            margin: 0px;
+        }
+        
+        .card-body {
+            position: relative;
+            padding: 16px;
+        }
+        
+        .gaadiex-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .gaadiex-list>.gaadiex-list-item {
+            padding: 0 22px;
+        }
+        
+        .gaadiex-list-item-img {
             float: left;
             width: 58px;
             height: 58px;
@@ -99,9 +144,10 @@
             margin-right: 20px;
             border-radius: 50%;
         }
-        .gaadiex-list-item i  {
+        
+        .gaadiex-list-item i {
             float: left;
-            font-size:48px;
+            font-size: 48px;
             width: 58px;
             height: 58px;
             margin-top: 20px;
@@ -109,35 +155,38 @@
             margin-right: 20px;
             border-radius: 50%;
         }
-        .border-b-1 {border-bottom: 1px solid rgba(162,162,162,.16);}
-
+        
+        .border-b-1 {
+            border-bottom: 1px solid rgba(162, 162, 162, .16);
+        }
     </style>
 
 
 </head>
 
 <body class="has-loading-screen">
-    {% block content %}
-    {% endblock %}
+    {% block content %} {% endblock %}
 
-	<script src={%static "assets/js/jquery-3.3.1.min.js" %}></script>
-	<script src={%static "assets/js/popper.min.js" %}></script>
-	<script src={%static "assets/bootstrap/js/bootstrap.min.js" %}></script>
+    <script src={%static "assets/js/jquery-3.3.1.min.js" %}></script>
+    <script src={%static "assets/js/popper.min.js" %}></script>
+    <script src={%static "assets/bootstrap/js/bootstrap.min.js" %}></script>
     <script src={%static "assets/js/imagesloaded.pkgd.min.js" %}></script>
-	<script src={%static "assets/js/isInViewport.jquery.js" %}></script>
-	<script src={%static "assets/js/jquery.magnific-popup.min.js" %}></script>
-	<script src={%static "assets/js/scrolla.jquery.min.js" %}></script>
-	<script src={%static "assets/js/jquery.validate.min.js" %}></script>
-	<script src={%static "assets/js/jquery-validate.bootstrap-tooltip.min.js" %}></script>
-	<script src={%static "assets/js/odometer.min.js" %}></script>
-	<script src={%static "assets/js/owl.carousel.min.js" %}></script>
+    <script src={%static "assets/js/isInViewport.jquery.js" %}></script>
+    <script src={%static "assets/js/jquery.magnific-popup.min.js" %}></script>
+    <script src={%static "assets/js/scrolla.jquery.min.js" %}></script>
+    <script src={%static "assets/js/jquery.validate.min.js" %}></script>
+    <script src={%static "assets/js/jquery-validate.bootstrap-tooltip.min.js" %}></script>
+    <script src={%static "assets/js/odometer.min.js" %}></script>
+    <script src={%static "assets/js/owl.carousel.min.js" %}></script>
     <script src={%static "assets/js/particles.min.js" %}></script>
     <script src={%static "assets/js/custom.js" %}></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src={%static "assets/assets-novel/js/jquery-1.10.2.min.js" %}><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src={%static "assets/assets-novel/js/jquery-1.10.2.min.js" %}><\/script>')
+    </script>
     <script type="text/javascript" src={%static "assets/assets-novel/js/jquery-migrate-1.2.1.min.js" %}></script>
- 
+
     <script src={%static "assets/assets-novel/js/jquery.flexslider.js" %}></script>
     <script src={%static "assets/assets-novel/js/waypoints.js" %}></script>
     <script src={%static "assets/assets-novel/js/jquery.fittext.js" %}></script>
@@ -145,4 +194,5 @@
     <script src={%static "assets/assets-novel/js/init.js" %}></script>
 
 </body>
+
 </html>

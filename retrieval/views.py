@@ -1,9 +1,9 @@
+# Coded with <3 Razuvitto
+# location : retrieval/views.py
+# April 2018
+
 from django.shortcuts import render
 from retrieval import main
-
-
-# def ContactDetail(request):
-#     return render(request, 'novel.html')
 
 def result(request):
     return render(request, 'hasil.html')

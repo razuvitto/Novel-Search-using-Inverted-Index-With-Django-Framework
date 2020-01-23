@@ -1,3 +1,7 @@
+# Coded with <3 Razuvitto
+# location : FinalProjects/settings.py
+# April 2018
+
 """
 Django settings for FinalProjects project.
 

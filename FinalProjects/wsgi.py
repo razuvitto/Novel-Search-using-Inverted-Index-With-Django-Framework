@@ -1,3 +1,7 @@
+# Coded with <3 Razuvitto
+# location : FinalProjects/wsgi.py
+# April 2018
+
 """
 WSGI config for FinalProjects project.
 

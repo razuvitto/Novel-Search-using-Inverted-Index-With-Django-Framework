@@ -1,12 +1,18 @@
-from django.core.files.storage import default_storage
+# Coded with <3 Razuvitto
+# location : retrieval/main.py
+# April 2018
 
+## // IMPORT LIBRARY // ##
+from django.core.files.storage import default_storage
+import string
+import re
+from sklearn.feature_extraction.text import CountVectorizer
+from IPython.display import display
 import pandas as pd
 import numpy as np
 import time
-
-
-
 import xml.dom.minidom as minidom
+
 collection = minidom.parse("retrieval/collections/novel-data.xml")
 
 # Ambil hanya nomer dokumen dan isi dokumen dari file sample.xml
@@ -75,12 +81,6 @@ doc_author = []
 for i in range(N_DOC):
     auth = author[i].firstChild.data
     doc_author.append(auth)
-
-## // IMPORT LIBRARY // ##
-import string
-import re
-from sklearn.feature_extraction.text import CountVectorizer
-from IPython.display import display
 
 # [ 1. Tokenization ]
 def remove_punc_tokenize(sentence): 
