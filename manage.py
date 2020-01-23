@@ -1,7 +1,11 @@
+# Coded with <3 Razuvitto
+# location : manage.py
+# April 2018
+
 #!/usr/bin/env python
 import os
 import sys
-
+import ..
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'FinalProjects.settings')
     try:
