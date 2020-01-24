@@ -2,7 +2,7 @@
 <p align="center"><img src="https://pbs.twimg.com/media/DlRdo6PX4AABnH5.jpg:large"></p>
 
 <p align="center">
-Coded with <3 by <a href="mailto:Rajuolivitto@gmail.com?Subject=Hello%20Raju" target="_top">Razuvitto</a>
+Coded with <small>❤️</small> by <a href="mailto:Rajuolivitto@gmail.com?Subject=Hello%20Raju" target="_top">Razuvitto</a>
 </p>
 
 
@@ -12,12 +12,12 @@ To run this project, you must be connected to the internet !!!
 This Project was build with python language and Django Framework
 
 
-##### :pushpin: 
+#### :pushpin: 
 ### Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-##### :pushpin:
+#### :pushpin:
 ### Prerequisites
 
 What things you need to install the software and how to install them
@@ -62,7 +62,7 @@ to install python package, use this command
 ```
 pip install package_name
 ```
-##### :pushpin: 
+#### :pushpin: 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
@@ -77,7 +77,7 @@ python manage.py runserver
 
 * open browser with port http://localhost:8000/ :globe_with_meridians:
 
-##### :pushpin: 
+#### :pushpin: 
 ### Built With
 
 * [Django](https://www.djangoproject.com/) - The web framework used
